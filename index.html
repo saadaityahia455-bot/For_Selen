@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#123b35">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="description" content="A small collection of letters, stories, and thoughts for Selen, from Saad.">
+  <title data-variable="TITLE"></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles/main.css">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="header">
+      <div class="topline">
+        <span class="topline-mark" aria-hidden="true">S / S</span>
+        <span>A little archive, made for one person</span>
+      </div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">From Saad, with care</p>
+          <h1 data-variable="TITLE"></h1>
+          <p class="love-note" data-variable="TEXT_TOP"></p>
+          <a class="start-link" href="#letters">Find a letter <span aria-hidden="true">↓</span></a>
+        </div>
+        <aside class="hero-note" aria-label="A small note about this collection">
+          <span class="note-index">A note in the margin</span>
+          <p>We met through letters. It still feels right to leave a few more here.</p>
+          <span class="note-flourish" aria-hidden="true">✳</span>
+        </aside>
+      </div>
+      <div class="hero-rule"><span>slowly, then all at once</span></div>
+    </header>
+
+    <section class="archive" id="letters" aria-labelledby="archive-title">
+      <div class="archive-heading">
+        <div>
+          <p class="eyebrow">A few things I wanted to keep</p>
+          <h2 id="archive-title">Open whenever you like</h2>
+        </div>
+        <span class="letter-count" id="letter-count" aria-live="polite"></span>
+      </div>
+      <div class="letter-list" id="letter-list"></div>
+    </section>
+
+    <section class="afterword" aria-labelledby="afterword-title">
+      <p class="eyebrow">One last thing</p>
+      <h2 id="afterword-title">There is a little more between the lines.</h2>
+      <button class="reveal-button" id="reveal-note" type="button" aria-expanded="false" aria-controls="hidden-note">
+        Read the small note <span aria-hidden="true">+</span>
+      </button>
+      <p class="hidden-note" id="hidden-note" hidden data-variable="TEXT_BOTTOM"></p>
+      <p class="signature" data-variable="YOUR_NAME"></p>
+    </section>
+
+    <footer class="footer">
+      <span>Kept somewhere safe, just for you.</span>
+      <span class="footer-heart" aria-hidden="true">♡</span>
+    </footer>
+  </main>
+  
+  <script type="module" src="src/scripts/main.js"></script>
+  <script type="module" src="src/scripts/templateBinding.js"></script>
+</html>
